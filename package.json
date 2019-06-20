@@ -1,10 +1,11 @@
 {
   "name": "eslint-config-clarity",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Ovyerus <iamovyerus@gmail.com>",
-  "description": "My personal ESLint configs ",
+  "description": "ESLint configs for ClarityMoe",
   "main": "index.js",
   "license": "MIT",
+  "repository": "https://github.com/ClarityCafe/eslint-config-clarity",
   "files": [
     "base.js",
     "index.js",
