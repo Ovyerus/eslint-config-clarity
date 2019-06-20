@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-clarity",
+  "version": "1.0.0",
+  "author": "Ovyerus <iamovyerus@gmail.com>",
+  "description": "My personal ESLint configs ",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "base.js",
+    "index.js",
+    "react-base.js",
+    "react-typescript.js",
+    "react.js",
+    "typescript-base.js",
+    "typescript.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "clarity-moe",
+    "typescript",
+    "react"
+  ],
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint": ">=5",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "eslint-plugin-sift": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
