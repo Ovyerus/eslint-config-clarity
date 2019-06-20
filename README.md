@@ -31,12 +31,12 @@ specify the name of one of the following presets depending on the project.
 These are the recommended configurations to use as they combine the [base presets](#base-presets) together
 with themselves and other ESLint settings to provide reasonable defaults.
 
- - [eslint-config-clarity]() The default configuration provided by this package, intended for use with
- any regular JavaScript project, such as [Clara]().
- - [eslint-config-clarity/react]() Configuration intended for use with any JavaScript + React project.
- - [eslint-config-clarity/typescript]() Configuration intended for use with any regular TypeScript project.
- - [eslint-config-clarity/react-typescript]() Configuration intended for use with any TypeScript + React
- project, such as [Sayonika]().
+ - [eslint-config-clarity](./index.js) The default configuration provided by this package, intended for use with
+ any regular JavaScript project, such as [Clara](https://github.com/ClarityMoe/Clara).
+ - [eslint-config-clarity/react](./react.js) Configuration intended for use with any JavaScript + React project.
+ - [eslint-config-clarity/typescript](./typescript.js) Configuration intended for use with any regular TypeScript project.
+ - [eslint-config-clarity/react-typescript](./react-typescript.js) Configuration intended for use with any TypeScript + React
+ project, such as [Sayonika](https://github.com/Sayo-nika/Frontend).
 
 ## Base Presets
 These are ESLint configurations which contain only the rules intended for that particular use case, plus any
@@ -44,10 +44,10 @@ bare needs for it to function on its own (for example, a parser neded for it to 
 the regular [presets](#presets), however there may be cases in which you need to customise special functionality 
 for the rules, in which case you'd use these.
 
- - [eslint-config-clarity/base]() The default base configuration. Provides rules for general JavaScript projects.
- - [eslint-config-clarity/react-base]() Base configuration that provides rules for React and React Hooks.
- - [eslint-config-clarity/typescript-base]() Base configuration that provides rules for TypeScript files. Intended
- to also be used in conjunction with the default base configuration.
+ - [eslint-config-clarity/base](./base.js) The default base configuration. Provides rules for general JavaScript projects.
+ - [eslint-config-clarity/react-base](./react-base.js) Base configuration that provides rules for React and React Hooks.
+ - [eslint-config-clarity/typescript-base](./typescript-base.js) Base configuration that provides rules for TypeScript files.
+ Intended to also be used in conjunction with the default base configuration.
 
 ## License
 This repository is licensed under the [MIT License](./LICENSE).
