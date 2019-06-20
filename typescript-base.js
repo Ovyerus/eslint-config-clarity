@@ -1,50 +1,54 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint'],
-    overrides: [{
-        files: ['*.ts', '*.tsx'],
-        rules: {
+    plugins: [ '@typescript-eslint' ],
+    overrides: [
+        {
+            files: [ '*.ts', '*.tsx' ],
+            rules: {
             // Disable ESLint rules that are covered by TypeScript.
-            'getter-return': 'off',
-            'no-dupe-args': 'off',
-            'no-dupe-keys': 'off',
-            'no-unreachable': 'off',
-            'valid-typeof': 'off',
-            'no-const-assign': 'off',
-            'no-new-symbol': 'off',
-            'no-this-before-super': 'off',
-            'no-undef': 'off',
-            'no-dupe-class-members': 'off',
-            'no-redeclare': 'off',
+                'getter-return': 'off',
+                'no-dupe-args': 'off',
+                'no-dupe-keys': 'off',
+                'no-unreachable': 'off',
+                'valid-typeof': 'off',
+                'no-const-assign': 'off',
+                'no-new-symbol': 'off',
+                'no-this-before-super': 'off',
+                'no-undef': 'off',
+                'no-dupe-class-members': 'off',
+                'no-redeclare': 'off',
 
-            // Enable some preferences
-            'no-var': 'error',
-            'prefer-const': 'error',
-            'prefer-rest-params': 'error',
-            'prefer-spread': 'error'
+                // Enable some preferences
+                'no-var': 'error',
+                'prefer-const': 'error',
+                'prefer-rest-params': 'error',
+                'prefer-spread': 'error'
+            }
         }
-    }],
+    ],
     rules: {
         '@typescript-eslint/adjacent-overload-signatures': 'error',
-        '@typescript-eslint/array-type': ['error', 'array-simple'],
+        '@typescript-eslint/array-type': [ 'error', 'array-simple' ],
         '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/ban-ts-ignore': 'error',
         '@typescript-eslint/camelcase': 'error',
         '@typescript-eslint/class-name-casing': 'error',
-        '@typescript-eslint/explicit-function-return-type': ['error', {
-            allowExpressions: true,
-            allowTypedFunctionExpressions: true,
-            allowHigherOrderFunctions: true
-        }],
-        '@typescript-eslint/explicit-member-accessibility': ['error', {accessibility: 'no-public'}],
-        '@typescript-eslint/func-call-spacing': ['error', 'never'],
-        '@typescript-eslint/indent': ['error', 4, { SwitchCase: 1 }],
+        '@typescript-eslint/explicit-function-return-type': [
+            'error', {
+                allowExpressions: true,
+                allowTypedFunctionExpressions: true,
+                allowHigherOrderFunctions: true
+            }
+        ],
+        '@typescript-eslint/explicit-member-accessibility': [ 'error', { accessibility: 'no-public' } ],
+        '@typescript-eslint/func-call-spacing': [ 'error', 'never' ],
+        '@typescript-eslint/indent': [ 'error', 4, { SwitchCase: 1 } ],
         '@typescript-eslint/member-delimiter-style': 'error',
         // '@typescript-eslint/member-ordering': ''
         '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
-        '@typescript-eslint/no-explicit-any': ['warn', {ignoreRestArgs: true}],
+        '@typescript-eslint/no-explicit-any': [ 'warn', { ignoreRestArgs: true } ],
         '@typescript-eslint/no-extraneous-class': 'error',
         '@typescript-eslint/no-floating-promises': 'error',
         '@typescript-eslint/no-for-in-array': 'error',
@@ -75,4 +79,4 @@ module.exports = {
         '@typescript-eslint/unbound-method': 'error',
         '@typescript-eslint/unified-signatures': 'error'
     }
-}
+};
