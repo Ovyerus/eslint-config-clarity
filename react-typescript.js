@@ -4,7 +4,5 @@ module.exports = {
         'clarity/typescript-base',
         'clarity/react-base'
     ],
-    env: {
-        browser: true
-    }
+    env: { browser: true }
 };
