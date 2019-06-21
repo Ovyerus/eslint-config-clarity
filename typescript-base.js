@@ -24,6 +24,13 @@ module.exports = {
                 'prefer-rest-params': 'error',
                 'prefer-spread': 'error'
             }
+        },
+        {
+            files: [ '*.js', '*.jsx' ],
+            rules: {
+                '@typescript-eslint/no-var-requires': 'off',
+                '@typescript-eslint/no-require-imports': 'off'
+            }
         }
     ],
     rules: {
@@ -48,7 +55,6 @@ module.exports = {
         '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
-        '@typescript-eslint/no-explicit-any': [ 'warn', { ignoreRestArgs: true } ],
         '@typescript-eslint/no-extraneous-class': 'error',
         '@typescript-eslint/no-floating-promises': 'error',
         '@typescript-eslint/no-for-in-array': 'error',
