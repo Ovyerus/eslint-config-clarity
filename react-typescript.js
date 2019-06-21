@@ -5,7 +5,6 @@ module.exports = {
         'clarity/react-base'
     ],
     env: {
-        node: true,
         browser: true
     }
 };

@@ -4,7 +4,6 @@ module.exports = {
         'clarity/react-base'
     ],
     env: {
-        node: true,
         browser: true
     },
     parserOptions: { ecmaVersion: 2018 },
