@@ -142,7 +142,7 @@ module.exports = {
         'func-call-spacing': 'error',
         'func-names': [ 'error', 'as-needed' ],
         'func-style': [ 'error', 'declaration', { allowArrowFunctions: true } ],
-        // 'function-paren-newline': 'error',
+        'function-paren-newline': [ 'error', 'multiline-arguments' ],
         'implicit-arrow-linebreak': 'error',
         indent: [ 'error', 4, { SwitchCase: 1 } ],
         'jsx-quotes': 'error',
@@ -302,7 +302,6 @@ module.exports = {
                 minItems: 4
             }
         ],
-        'sift/function-paren-newline': [ 'error', 'multiline' ],
         'sift/space-infix-ops': 'error'
     }
 };
