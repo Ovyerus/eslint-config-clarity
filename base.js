@@ -51,7 +51,6 @@ module.exports = {
         eqeqeq: [ 'error', 'always', { null: 'ignore' } ],
         'no-caller': 'error',
         'no-case-declarations': 'error',
-        'no-else-return': 'warn',
         'no-empty-pattern': 'error',
         'no-eval': 'warn',
         'no-extend-native': 'error',
@@ -116,7 +115,7 @@ module.exports = {
         'no-use-before-define': 'error',
 
         // Node
-        'global-require': 'error',
+        'global-require': 'warn',
         'handle-callback-err': 'error',
         'no-buffer-constructor': 'error',
         'no-mixed-requires': 'error',
