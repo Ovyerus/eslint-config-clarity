@@ -4,7 +4,12 @@ module.exports = {
     parserOptions: { sourceType: 'module' },
     overrides: [
         {
-            files: [ '*.ts', '*.tsx' ],
+            files: [
+                '*.ts',
+                '*.tsx',
+                '*.js',
+                '*.jsx'
+            ],
             rules: {
             // Disable ESLint rules that are covered by TypeScript.
                 'getter-return': 'off',
@@ -18,6 +23,7 @@ module.exports = {
                 'no-undef': 'off',
                 'no-dupe-class-members': 'off',
                 'no-redeclare': 'off',
+                camelcase: 'off',
 
                 // Enable some preferences
                 'no-var': 'error',
