@@ -37,7 +37,7 @@ module.exports = {
         'react/jsx-boolean-value': [ 'error', 'never' ],
         'react/jsx-closing-bracket-location': [ 'error', 'line-aligned' ],
         'react/jsx-closing-tag-location': 'error',
-        'react/jsx-curly-newline': 'error',
+        // 'react/jsx-curly-newline': 'error',
         'react/jsx-curly-spacing': 'error',
         'react/jsx-equals-spacing': 'error',
         'react/jsx-filename-extension': [ 'error', { extensions: [ '.jsx', '.tsx' ] } ],
@@ -60,7 +60,7 @@ module.exports = {
         'react/jsx-curly-brace-presence': [ 'error', 'never' ],
         'react/jsx-fragments': [ 'error', 'syntax' ],
         'react/jsx-pascal-case': 'error',
-        'react/jsx-props-no-multi-space': 'error',
+        'react/jsx-props-no-multi-spaces': 'error',
         'react/jsx-sort-props': [
             'error', {
                 ignoreCase: true,
@@ -70,7 +70,6 @@ module.exports = {
                 reservedFirst: true
             }
         ],
-        'react/jsx-space-before-closing': [ 'error', 'never' ],
         'react/jsx-tag-spacing': [
             'error', {
                 beforeSelfClosing: 'never',
