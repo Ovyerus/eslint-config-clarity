@@ -29,19 +29,19 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.10.2",
     "@typescript-eslint/parser": "^1.10.2",
-    "eslint": ">=5",
+    "eslint": ">=6.0.0",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
     "eslint-plugin-sift": "^0.3.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "1.10.2",
-    "@typescript-eslint/parser": "1.10.2",
-    "eslint": "6.0.0",
-    "eslint-plugin-import": "2.17.3",
-    "eslint-plugin-react": "7.13.0",
-    "eslint-plugin-react-hooks": "1.6.0",
-    "eslint-plugin-sift": "0.3.0"
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint": "^6.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "eslint-plugin-sift": "^0.3.0"
   }
 }
