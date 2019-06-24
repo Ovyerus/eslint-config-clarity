@@ -37,7 +37,7 @@ module.exports = {
         'react/jsx-boolean-value': [ 'error', 'never' ],
         'react/jsx-closing-bracket-location': [ 'error', 'line-aligned' ],
         'react/jsx-closing-tag-location': 'error',
-        // 'react/jsx-curly-newline': 'error',
+        'react/jsx-curly-newline': 'error',
         'react/jsx-curly-spacing': 'error',
         'react/jsx-equals-spacing': 'error',
         'react/jsx-filename-extension': [ 'error', { extensions: [ '.jsx', '.tsx' ] } ],
