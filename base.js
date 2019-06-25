@@ -140,10 +140,8 @@ module.exports = {
         'computed-property-spacing': 'error',
         'eol-last': 'error',
         'func-call-spacing': 'error',
-        'func-names': [ 'error', 'as-needed' ],
         'func-style': [ 'error', 'declaration', { allowArrowFunctions: true } ],
         'function-paren-newline': [ 'error', 'multiline-arguments' ],
-        'implicit-arrow-linebreak': 'error',
         indent: [ 'error', 4, { SwitchCase: 1 } ],
         'jsx-quotes': 'error',
         'key-spacing': 'error',
@@ -293,7 +291,6 @@ module.exports = {
             }
         ],
         'import/prefer-default-export': 'error',
-        'import/unambiguous': 'error',
 
         // Slightly different spacing handlind in arrays, functions, and default parameters.
         'sift/array-element-newline': [
