@@ -24,6 +24,7 @@ module.exports = {
                 'no-dupe-class-members': 'off',
                 'no-redeclare': 'off',
                 camelcase: 'off',
+                'no-unused-vars': 'off',
 
                 // Enable some preferences
                 'no-var': 'error',
@@ -47,13 +48,6 @@ module.exports = {
         '@typescript-eslint/ban-ts-ignore': 'error',
         '@typescript-eslint/camelcase': 'error',
         '@typescript-eslint/class-name-casing': 'error',
-        '@typescript-eslint/explicit-function-return-type': [
-            'error', {
-                allowExpressions: true,
-                allowTypedFunctionExpressions: true,
-                allowHigherOrderFunctions: true
-            }
-        ],
         '@typescript-eslint/explicit-member-accessibility': [ 'error', { accessibility: 'no-public' } ],
         '@typescript-eslint/func-call-spacing': [ 'error', 'never' ],
         '@typescript-eslint/indent': [ 'error', 4, { SwitchCase: 1 } ],
@@ -63,7 +57,6 @@ module.exports = {
         '@typescript-eslint/no-array-constructor': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/no-extraneous-class': 'error',
-        // '@typescript-eslint/no-floating-promises': 'error',
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-inferrable-types': 'error',
         '@typescript-eslint/no-misused-new': 'error',
@@ -84,7 +77,6 @@ module.exports = {
         '@typescript-eslint/prefer-interface': 'error',
         // '@typescript-eslint/prefer-regexp-exec': ''
         '@typescript-eslint/prefer-string-starts-ends-with': 'error',
-        '@typescript-eslint/promise-function-async': 'error',
         '@typescript-eslint/require-array-sort-compare': 'error',
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/semi': 'error',
