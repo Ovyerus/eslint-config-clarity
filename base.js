@@ -31,7 +31,6 @@ module.exports = {
     'no-prototype-builtins': 'error',
     'no-sparse-arrays': 'error',
     'no-template-curly-in-string': 'warn',
-    'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
@@ -95,14 +94,12 @@ module.exports = {
     'no-with': 'error',
     'prefer-promise-reject-errors': 'error',
     radix: ['error', 'as-needed'],
-    'require-await': 'error',
+    'require-await': 'warn',
     yoda: 'error',
 
     // Variables
-    'init-declarations': 'error',
     'no-delete-var': 'error',
     'no-label-var': 'error',
-    'no-shadow': 'error',
     'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
     'no-undef-init': 'error',
@@ -172,16 +169,8 @@ module.exports = {
     'import/default': 'error',
     'import/export': 'error',
     'import/exports-last': 'error',
-    'import/extensions': [
-      'error',
-      'always',
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never'
-      }
-    ],
+    // bruh
+    'import/extensions': ['error', 'never'],
     'import/named': 'error',
     'import/newline-after-import': 'error',
     'import/no-amd': 'error',
@@ -192,7 +181,7 @@ module.exports = {
     'import/no-cycle': 'error', // May need to change this in the future.
     'import/no-deprecated': 'error',
     'import/no-dynamic-require': 'warn',
-    'import/no-extraneous-dependencies': ['error', { devDependencies: false }],
+    'import/no-extraneous-dependencies': 'error',
     'import/no-mutable-exports': 'error',
     'import/no-named-as-default': 'error',
     'import/no-named-as-default-member': 'error',
