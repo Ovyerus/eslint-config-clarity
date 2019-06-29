@@ -20,6 +20,7 @@ module.exports = {
         'no-redeclare': 'off',
         camelcase: 'off',
         'no-unused-vars': 'off',
+        'no-use-before-define': 'off',
 
         // Enable some preferences
         'no-var': 'error',
@@ -56,14 +57,16 @@ module.exports = {
     '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-namespace': 'error',
-    '@typescript-eslint/no-object-literal-type-assertion': 'error',
     '@typescript-eslint/no-require-imports': 'warn',
     '@typescript-eslint/no-this-alias': 'error',
     '@typescript-eslint/no-triple-slash-reference': 'warn',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
-    '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      { functions: false, classes: false, variables: false }
+    ],
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/no-var-requires': 'warn',
     '@typescript-eslint/prefer-for-of': 'error',
