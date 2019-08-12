@@ -46,7 +46,10 @@ module.exports = {
     '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
-      { accessibility: 'no-public' }
+      {
+        accessibility: 'no-public',
+        overrides: { parameterProperties: 'explicit' }
+      }
     ],
     // '@typescript-eslint/member-ordering': ''
     '@typescript-eslint/no-angle-bracket-type-assertion': 'error',

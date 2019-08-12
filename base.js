@@ -117,7 +117,11 @@ module.exports = {
     // Style
     camelcase: 'error',
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
-    'lines-between-class-members': 'error',
+    'lines-between-class-members': [
+      'error',
+      'always',
+      { exceptAfterSingleLine: true }
+    ],
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-lonely-if': 'error',
