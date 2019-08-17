@@ -44,6 +44,8 @@ module.exports = {
     '@typescript-eslint/ban-ts-ignore': 'error',
     '@typescript-eslint/camelcase': 'error',
     '@typescript-eslint/class-name-casing': 'error',
+    '@typescript-eslint/consistent-type-assertions': 'error',
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
       {
@@ -52,7 +54,6 @@ module.exports = {
       }
     ],
     // '@typescript-eslint/member-ordering': ''
-    '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
@@ -62,7 +63,6 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'error',
     '@typescript-eslint/no-require-imports': 'warn',
     '@typescript-eslint/no-this-alias': 'error',
-    '@typescript-eslint/no-triple-slash-reference': 'warn',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
@@ -75,11 +75,14 @@ module.exports = {
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/prefer-includes': 'error',
-    '@typescript-eslint/prefer-interface': 'error',
     // '@typescript-eslint/prefer-regexp-exec': ''
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
+    '@typescript-eslint/triple-slash-reference': [
+      'error',
+      { types: 'prefer-import', path: 'never', lib: 'never' }
+    ],
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'error'
   }
