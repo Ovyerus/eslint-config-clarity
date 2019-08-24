@@ -132,7 +132,7 @@ module.exports = {
     'operator-assignment': 'error',
     // TODO: padding-line-between-statements
     'prefer-object-spread': 'error',
-    quotes: ['error', 'single'],
+    quotes: ['error', 'single', { avoidEscape: true }],
     'spaced-comment': 'error',
 
     // ES6
