@@ -224,15 +224,6 @@ module.exports = {
         'newlines-between': 'always'
       }
     ],
-    'import/prefer-default-export': 'error'
-
-    // Slightly different spacing handlind in arrays, functions, and default parameters.
-    // 'sift/array-element-newline': [
-    //     'error', {
-    //         multiline: true,
-    //         minItems: 4
-    //     }
-    // ],
-    // 'sift/space-infix-ops': 'error'
+    'import/prefer-default-export': 'warn'
   }
 };
