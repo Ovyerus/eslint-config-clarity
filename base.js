@@ -3,7 +3,7 @@ module.exports = {
     es6: true,
     node: true
   },
-  plugins: ['import', 'prettier', 'sift'],
+  plugins: ['import', 'prettier'],
   rules: {
     // Syntax
     'for-direction': 'error',
