@@ -172,7 +172,6 @@ module.exports = {
     'import/first': 'error',
     'import/default': 'error',
     'import/export': 'error',
-    'import/exports-last': 'error',
     // bruh
     'import/extensions': ['error', 'never'],
     'import/named': 'error',
