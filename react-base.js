@@ -1,7 +1,7 @@
 module.exports = {
   plugins: ['react', 'react-hooks'],
   parserOptions: { ecmaFeatures: { jsx: true } },
-  settings: { react: { version: 'react' } },
+  settings: { react: { version: 'detect' } },
   rules: {
     'react/default-props-match-prop-types': 'error',
     'react/destructuring-assignment': [
