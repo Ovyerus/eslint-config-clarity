@@ -104,7 +104,7 @@ module.exports = {
     'no-undef': 'error',
     'no-undef-init': 'error',
     'no-unused-vars': 'error',
-    'no-use-before-define': 'error',
+    'no-use-before-define': ['error', { variables: false, functions: false }],
 
     // Node
     'global-require': 'warn',
