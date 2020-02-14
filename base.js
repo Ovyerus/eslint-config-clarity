@@ -167,7 +167,7 @@ module.exports = {
     "symbol-description": "error",
 
     // Plugins
-    "prettier/prettier": ["error", { singleQuote: true }],
+    "prettier/prettier": "error",
 
     "import/first": "error",
     "import/default": "error",
