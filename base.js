@@ -181,7 +181,11 @@ module.exports = {
     "import/default": "error",
     "import/export": "error",
     // bruh
-    "import/extensions": ["error", "never"],
+    "import/extensions": [
+      "error",
+      "always",
+      { js: "never", jsx: "never", ts: "never", tsx: "never" }
+    ],
     "import/named": "error",
     "import/newline-after-import": "error",
     "import/no-amd": "error",
