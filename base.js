@@ -183,8 +183,25 @@ module.exports = {
     // bruh
     "import/extensions": [
       "error",
-      "always",
-      { js: "never", jsx: "never", ts: "never", tsx: "never" }
+      "never",
+      Object.fromEntries(
+        [
+          "json",
+          "yaml",
+          "yml",
+          "webp",
+          "png",
+          "jpg",
+          "jpeg",
+          "gif",
+          "svg",
+          "css",
+          "scss",
+          "sass",
+          "stylus",
+          "less"
+        ].map(ext => [ext, "always"])
+      )
     ],
     "import/named": "error",
     "import/newline-after-import": "error",
