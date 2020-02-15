@@ -9,6 +9,11 @@ module.exports = {
       "always",
       { ignoreClassFields: true }
     ],
+    "react/function-component-definition": [
+      "error",
+      { namedComponents: "arrow-function", unnamedComponents: "arrow-function" }
+    ],
+    "react/no-adjacent-inline-elements": "warn",
     "react/no-access-state-in-setstate": "error",
     "react/no-array-index-key": "error",
     "react/no-children-prop": "error",
@@ -36,7 +41,9 @@ module.exports = {
     "react/void-dom-elements-no-children": "error",
 
     "react/jsx-boolean-value": ["error", "never"],
+    "react/jsx-curly-brace-presence": ["error", "never"],
     "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".tsx"] }],
+    "react/jsx-fragments": ["error", "syntax"],
     "react/jsx-key": "error",
     "react/jsx-no-bind": [
       "error",
@@ -47,10 +54,10 @@ module.exports = {
     ],
     "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-script-url": "error",
     "react/jsx-no-target-blank": "error",
     "react/jsx-no-undef": "error",
-    "react/jsx-curly-brace-presence": ["error", "never"],
-    "react/jsx-fragments": ["error", "syntax"],
+    "react/jsx-no-useless-fragment": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-sort-props": [
       "error",
