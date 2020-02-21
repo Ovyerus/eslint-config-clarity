@@ -105,7 +105,7 @@ module.exports = {
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/restrict-template-expressions": [
       "error",
-      { allowNumber: true, allowBoolean: true }
+      { allowNumber: true, allowBoolean: true, allowNullable: true }
     ],
     "@typescript-eslint/return-await": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
