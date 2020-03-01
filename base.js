@@ -1,3 +1,11 @@
+const fromEntries =
+  Object.fromEntries ||
+  (entries =>
+    entries.reduce(
+      (all, [key, value]) => Object.assign(all, { [key]: value }),
+      {}
+    ));
+
 module.exports = {
   env: {
     es6: true,
@@ -184,7 +192,7 @@ module.exports = {
     "import/extensions": [
       "error",
       "never",
-      Object.fromEntries(
+      fromEntries(
         [
           "json",
           "yaml",
