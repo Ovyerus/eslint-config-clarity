@@ -28,16 +28,16 @@ module.exports = {
         "no-var": "error",
         "prefer-const": "error",
         "prefer-rest-params": "error",
-        "prefer-spread": "error"
-      }
+        "prefer-spread": "error",
+      },
     },
     {
       files: ["*.js", "*.jsx"],
       rules: {
         "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/no-require-imports": "off"
-      }
-    }
+        "@typescript-eslint/no-require-imports": "off",
+      },
+    },
   ],
   rules: {
     "@typescript-eslint/adjacent-overload-signatures": "error",
@@ -53,8 +53,8 @@ module.exports = {
       "error",
       {
         accessibility: "no-public",
-        overrides: { parameterProperties: "explicit" }
-      }
+        overrides: { parameterProperties: "explicit" },
+      },
     ],
     // Maybe this one???
     // "@typescript-eslint/explicit-module-boundary-types": """
@@ -81,15 +81,15 @@ module.exports = {
       {
         allowConstantLoopConditions: true,
         ignoreRhs: true,
-        checkArrayPredicates: true
-      }
+        checkArrayPredicates: true,
+      },
     ],
     "@typescript-eslint/no-unnecessary-qualifier": "error",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-use-before-define": [
       "error",
-      { functions: false, classes: false, variables: false }
+      { functions: false, classes: false, variables: false },
     ],
     "@typescript-eslint/no-useless-constructor": "error",
     "@typescript-eslint/no-var-requires": "warn",
@@ -105,15 +105,15 @@ module.exports = {
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/restrict-template-expressions": [
       "error",
-      { allowNumber: true, allowBoolean: true, allowNullable: true }
+      { allowNumber: true, allowBoolean: true, allowNullable: true },
     ],
     "@typescript-eslint/return-await": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/triple-slash-reference": [
       "error",
-      { types: "prefer-import", path: "never", lib: "never" }
+      { types: "prefer-import", path: "never", lib: "never" },
     ],
     "@typescript-eslint/unbound-method": "error",
-    "@typescript-eslint/unified-signatures": "error"
-  }
+    "@typescript-eslint/unified-signatures": "error",
+  },
 };
