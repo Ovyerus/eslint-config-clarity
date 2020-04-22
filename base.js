@@ -1,6 +1,6 @@
 const fromEntries =
   Object.fromEntries ||
-  (entries =>
+  ((entries) =>
     entries.reduce(
       (all, [key, value]) => Object.assign(all, { [key]: value }),
       {}
@@ -9,7 +9,7 @@ const fromEntries =
 module.exports = {
   env: {
     es6: true,
-    node: true
+    node: true,
   },
   plugins: ["import", "prettier"],
   rules: {
@@ -76,8 +76,8 @@ module.exports = {
       "error",
       {
         allowLoop: true,
-        allowSwitch: true
-      }
+        allowSwitch: true,
+      },
     ],
     "no-lone-blocks": "error",
     "no-loop-func": "error",
@@ -135,7 +135,7 @@ module.exports = {
     "lines-between-class-members": [
       "error",
       "always",
-      { exceptAfterSingleLine: true }
+      { exceptAfterSingleLine: true },
     ],
     "new-cap": "error",
     "no-array-constructor": "error",
@@ -169,8 +169,8 @@ module.exports = {
       "always",
       {
         avoidQuotes: true,
-        avoidExplicitReturnArrows: true
-      }
+        avoidExplicitReturnArrows: true,
+      },
     ],
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
@@ -207,16 +207,16 @@ module.exports = {
           "scss",
           "sass",
           "stylus",
-          "less"
-        ].map(ext => [ext, "always"])
-      )
+          "less",
+        ].map((ext) => [ext, "always"])
+      ),
     ],
     "import/named": "error",
     "import/newline-after-import": "error",
     "import/no-amd": "error",
     "import/no-anonymous-default-export": [
       "error",
-      { allowArrowFunction: true }
+      { allowArrowFunction: true },
     ],
     "import/no-cycle": "error", // May need to change this in the future.
     "import/no-deprecated": "error",
@@ -237,9 +237,9 @@ module.exports = {
           "**/*.scss",
           "**/*.less",
           "**/*.styl",
-          "**/*.stylus"
-        ]
-      }
+          "**/*.stylus",
+        ],
+      },
     ],
     "import/no-unused-modules": "error",
     "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
@@ -255,11 +255,11 @@ module.exports = {
           "builtin",
           "parent",
           ["sibling", "index"],
-          "internal"
+          "internal",
         ],
-        "newlines-between": "always"
-      }
+        "newlines-between": "always",
+      },
     ],
-    "import/prefer-default-export": "warn"
-  }
+    "import/prefer-default-export": "warn",
+  },
 };

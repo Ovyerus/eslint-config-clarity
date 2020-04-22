@@ -7,11 +7,14 @@ module.exports = {
     "react/destructuring-assignment": [
       "warn",
       "always",
-      { ignoreClassFields: true }
+      { ignoreClassFields: true },
     ],
     "react/function-component-definition": [
       "error",
-      { namedComponents: "arrow-function", unnamedComponents: "arrow-function" }
+      {
+        namedComponents: "arrow-function",
+        unnamedComponents: "arrow-function",
+      },
     ],
     "react/no-adjacent-inline-elements": "warn",
     "react/no-access-state-in-setstate": "error",
@@ -49,8 +52,8 @@ module.exports = {
       "error",
       {
         allowArrowFunctions: true,
-        ignoreRefs: true
-      }
+        ignoreRefs: true,
+      },
     ],
     "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-duplicate-props": "error",
@@ -66,14 +69,14 @@ module.exports = {
         callbacksLast: true,
         shorthandLast: true,
         noSortAlphabetically: true,
-        reservedFirst: true
-      }
+        reservedFirst: true,
+      },
     ],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
 
     // Hooks
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
-  }
+    "react-hooks/exhaustive-deps": "warn",
+  },
 };
