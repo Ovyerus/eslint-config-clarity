@@ -9,15 +9,6 @@
   "scripts": {
     "lint": "eslint ."
   },
-  "files": [
-    "base.js",
-    "index.js",
-    "react-base.js",
-    "react-typescript.js",
-    "react.js",
-    "typescript-base.js",
-    "typescript.js"
-  ],
   "keywords": [
     "eslint",
     "eslintconfig",
