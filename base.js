@@ -208,16 +208,13 @@ module.exports = {
           "sass",
           "stylus",
           "less",
+          "vue",
         ].map((ext) => [ext, "always"])
       ),
     ],
     "import/named": "error",
     "import/newline-after-import": "error",
     "import/no-amd": "error",
-    "import/no-anonymous-default-export": [
-      "error",
-      { allowArrowFunction: true },
-    ],
     "import/no-cycle": "error", // May need to change this in the future.
     "import/no-deprecated": "error",
     "import/no-dynamic-require": "warn",
