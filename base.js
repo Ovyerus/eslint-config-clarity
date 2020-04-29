@@ -157,7 +157,7 @@ module.exports = {
     "no-class-assign": "error",
     "no-const-assign": "error",
     "no-dupe-class-members": "error",
-    "no-duplicate-imports": "error",
+    // "no-duplicate-imports": "error",
     "no-new-symbol": "error",
     "no-this-before-super": "error",
     "no-useless-computed-key": "error",
@@ -188,6 +188,7 @@ module.exports = {
     "import/first": "error",
     "import/default": "error",
     "import/export": "error",
+    "import/exports-last": "error",
     // bruh
     "import/extensions": [
       "error",
@@ -215,8 +216,8 @@ module.exports = {
     "import/named": "error",
     "import/newline-after-import": "error",
     "import/no-amd": "error",
-    "import/no-cycle": "error", // May need to change this in the future.
     "import/no-deprecated": "error",
+    "import/no-duplicates": "error",
     "import/no-dynamic-require": "warn",
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
@@ -238,6 +239,7 @@ module.exports = {
         ],
       },
     ],
+    "import/no-unresolved": ["error", { commonjs: true }],
     "import/no-unused-modules": "error",
     "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
     "import/no-webpack-loader-syntax": "warn",
@@ -254,7 +256,12 @@ module.exports = {
           ["sibling", "index"],
           "internal",
         ],
+        pathGrous: [
+          { pattern: "~/**", group: "internal" },
+          { pattern: "@/**", group: "internal" },
+        ],
         "newlines-between": "always",
+        alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],
     "import/prefer-default-export": "warn",

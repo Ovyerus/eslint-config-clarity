@@ -1,7 +1,23 @@
+const allExtensions = [".ts", ".tsx", ".d.ts", ".js", ".jsx"];
+
 module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
   parserOptions: { sourceType: "module" },
+
+  settings: {
+    "import/extensions": allExtensions,
+    "import/external-module-folders": ["node_modules", "node_modules/@types"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx", ".d.ts"],
+    },
+    "import/resolver": {
+      node: {
+        extensions: allExtensions,
+      },
+    },
+  },
+
   overrides: [
     {
       files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
