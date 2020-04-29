@@ -256,7 +256,7 @@ module.exports = {
           ["sibling", "index"],
           "internal",
         ],
-        pathGrous: [
+        pathGroups: [
           { pattern: "~/**", group: "internal" },
           { pattern: "@/**", group: "internal" },
         ],

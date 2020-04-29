@@ -39,6 +39,7 @@ module.exports = {
         camelcase: "off",
         "no-unused-vars": "off",
         "no-use-before-define": "off",
+        "dot-notation": "off",
 
         // Enable some preferences
         "no-var": "error",
@@ -65,6 +66,7 @@ module.exports = {
     "@typescript-eslint/consistent-type-assertions": "error",
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/default-param-last": "error",
+    "@typescript-eslint/dot-notation": "error",
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
       {
@@ -85,6 +87,7 @@ module.exports = {
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-inferrable-types": "error",
+    "@typescript-eslint/no-invalid-void-type": "error",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-namespace": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
