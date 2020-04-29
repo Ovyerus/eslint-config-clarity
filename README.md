@@ -1,4 +1,6 @@
 # eslint-config-clarity
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FClarityCafe%2Feslint-config-clarity.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FClarityCafe%2Feslint-config-clarity?ref=badge_shield)
+
 
 [badges]
 
@@ -75,3 +77,6 @@ for the rules, in which case you'd use these.
 ## License
 
 This repository is licensed under the [MIT License](./LICENSE).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FClarityCafe%2Feslint-config-clarity.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FClarityCafe%2Feslint-config-clarity?ref=badge_large)
