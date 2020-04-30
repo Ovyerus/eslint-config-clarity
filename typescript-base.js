@@ -40,6 +40,7 @@ module.exports = {
         "no-unused-vars": "off",
         "no-use-before-define": "off",
         "dot-notation": "off",
+        "no-return-await": "off",
 
         // Enable some preferences
         "no-var": "error",
@@ -126,7 +127,7 @@ module.exports = {
       "error",
       { allowNumber: true, allowBoolean: true, allowNullable: true },
     ],
-    "@typescript-eslint/return-await": "error",
+    "@typescript-eslint/return-await": ["error", "in-try-catch"],
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/triple-slash-reference": [
       "error",
