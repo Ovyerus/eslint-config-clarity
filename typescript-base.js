@@ -41,6 +41,7 @@ module.exports = {
         "no-use-before-define": "off",
         "dot-notation": "off",
         "no-return-await": "off",
+        "no-invalid-this": "off",
 
         // Enable some preferences
         "no-var": "error",
@@ -88,6 +89,7 @@ module.exports = {
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/no-implied-eval": "error",
     "@typescript-eslint/no-inferrable-types": "error",
+    "@typescript-eslint/no-invalid-this": "error",
     "@typescript-eslint/no-invalid-void-type": "error",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-namespace": "error",
