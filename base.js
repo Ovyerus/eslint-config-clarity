@@ -122,11 +122,11 @@ module.exports = {
     "no-use-before-define": ["error", { variables: false, functions: false }],
 
     // Node
-    "global-require": "warn",
-    "handle-callback-err": "error",
-    "no-buffer-constructor": "error",
-    "no-mixed-requires": "error",
-    "no-path-concat": "error",
+    // "global-require": "warn",
+    // "handle-callback-err": "error",
+    // "no-buffer-constructor": "error",
+    // "no-mixed-requires": "error",
+    // "no-path-concat": "error",
     "no-sync": "warn",
 
     // Style
