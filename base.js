@@ -81,6 +81,7 @@ module.exports = {
     ],
     "no-lone-blocks": "error",
     "no-loop-func": "error",
+    "no-loss-of-precision": "error",
     "no-multi-str": "error",
     "no-new": "error",
     "no-new-func": "error",
