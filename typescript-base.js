@@ -62,9 +62,6 @@ module.exports = {
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": ["error", { default: "array-simple" }],
     "@typescript-eslint/await-thenable": "error",
-    "@typescript-eslint/ban-ts-ignore": "error",
-    "@typescript-eslint/camelcase": "error",
-    "@typescript-eslint/class-name-casing": "error",
     "@typescript-eslint/consistent-type-assertions": "error",
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/default-param-last": "error",
@@ -79,7 +76,7 @@ module.exports = {
     // Maybe this one???
     // "@typescript-eslint/explicit-module-boundary-types": """
 
-    // '@typescript-eslint/member-ordering': ''
+    "@typescript-eslint/naming-convention": "error",
     "@typescript-eslint/no-array-constructor": "error",
     "@typescript-eslint/no-dupe-class-members": "error",
     "@typescript-eslint/no-dynamic-delete": "warn",
@@ -102,8 +99,6 @@ module.exports = {
       "error",
       {
         allowConstantLoopConditions: true,
-        ignoreRhs: true,
-        checkArrayPredicates: true,
       },
     ],
     "@typescript-eslint/no-unnecessary-qualifier": "error",
@@ -127,7 +122,7 @@ module.exports = {
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/restrict-template-expressions": [
       "error",
-      { allowNumber: true, allowBoolean: true, allowNullable: true },
+      { allowNumber: true, allowBoolean: true, allowNullish: true },
     ],
     "@typescript-eslint/return-await": ["error", "in-try-catch"],
     "@typescript-eslint/switch-exhaustiveness-check": "error",
