@@ -42,6 +42,7 @@ module.exports = {
         "dot-notation": "off",
         "no-return-await": "off",
         "no-invalid-this": "off",
+        "no-loss-of-precision": "off",
 
         // Enable some preferences
         "no-var": "error",
@@ -88,6 +89,7 @@ module.exports = {
     "@typescript-eslint/no-inferrable-types": "error",
     "@typescript-eslint/no-invalid-this": "error",
     "@typescript-eslint/no-invalid-void-type": "error",
+    "@typescript-eslint/no-loss-of-precision": "error",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-namespace": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
@@ -114,6 +116,7 @@ module.exports = {
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-includes": "error",
+    "@typescript-eslint/prefer-literal-enum-member": "warn",
     "@typescript-eslint/prefer-nullish-coalescing": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
     // '@typescript-eslint/prefer-regexp-exec': ''

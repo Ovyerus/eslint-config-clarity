@@ -43,6 +43,7 @@ module.exports = {
     "no-sparse-arrays": "error",
     "no-template-curly-in-string": "warn",
     "no-unreachable": "error",
+    "no-unreachable-loop": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
     "require-atomic-updates": "error",
