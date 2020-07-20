@@ -32,17 +32,17 @@
     "vue-eslint-parser": "^7.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "3.0.2",
-    "@typescript-eslint/parser": "3.0.2",
+    "@typescript-eslint/eslint-plugin": "3.6.1",
+    "@typescript-eslint/parser": "3.6.1",
     "babel-eslint": "10.1.0",
-    "eslint": "7.1.0",
-    "eslint-plugin-import": "2.20.2",
-    "eslint-plugin-prettier": "3.1.3",
-    "eslint-plugin-react": "7.20.0",
+    "eslint": "7.5.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.3",
     "eslint-plugin-react-hooks": "4.0.8",
     "eslint-plugin-vue": "6.2.2",
     "prettier": "2.0.5",
-    "typescript": "3.9.3",
+    "typescript": "3.9.7",
     "vue-eslint-parser": "7.1.0"
   }
 }
