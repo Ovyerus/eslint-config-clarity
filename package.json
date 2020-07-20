@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-clarity",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "author": "Ovyerus <iamovyerus@gmail.com>",
   "description": "ESLint configs for ClarityMoe",
   "main": "index.js",
