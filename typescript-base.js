@@ -43,6 +43,7 @@ module.exports = {
         "no-return-await": "off",
         "no-invalid-this": "off",
         "no-loss-of-precision": "off",
+        "no-loop-func": "off",
 
         // Enable some preferences
         "no-var": "error",
@@ -77,7 +78,15 @@ module.exports = {
     // Maybe this one???
     // "@typescript-eslint/explicit-module-boundary-types": """
 
-    "@typescript-eslint/naming-convention": "error",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: "default",
+        format: ["camelCase", "PascalCase", "UPPER_CASE"],
+        leadingUnderscore: "allow",
+        trailingUnderscore: "allow",
+      },
+    ],
     "@typescript-eslint/no-array-constructor": "error",
     "@typescript-eslint/no-dupe-class-members": "error",
     "@typescript-eslint/no-dynamic-delete": "warn",
@@ -90,6 +99,7 @@ module.exports = {
     "@typescript-eslint/no-invalid-this": "error",
     "@typescript-eslint/no-invalid-void-type": "error",
     "@typescript-eslint/no-loss-of-precision": "error",
+    "@typescript-eslint/no-loop-func": "error",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-namespace": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",

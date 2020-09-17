@@ -223,7 +223,7 @@ module.exports = {
     "import/no-dynamic-require": "warn",
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
-    "import/no-named-as-default": "error",
+    // "import/no-named-as-default": "error",
     "import/no-named-as-default-member": "error",
     "import/no-namespace": "error",
     "import/no-self-import": "error",
@@ -266,6 +266,6 @@ module.exports = {
         alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],
-    "import/prefer-default-export": "warn",
+    // "import/prefer-default-export": "warn",
   },
 };
