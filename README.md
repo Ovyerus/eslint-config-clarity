@@ -1,3 +1,7 @@
+# EOL
+
+This project is now End-of-Life. We will no longer actively support this project as there are more better defaults right now that fits our cases than a seperate rule.
+
 # eslint-config-clarity
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FClarityCafe%2Feslint-config-clarity.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FClarityCafe%2Feslint-config-clarity?ref=badge_shield)
 
