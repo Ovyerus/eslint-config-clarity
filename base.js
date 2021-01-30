@@ -225,7 +225,7 @@ module.exports = {
     "import/no-mutable-exports": "error",
     // "import/no-named-as-default": "error",
     "import/no-named-as-default-member": "error",
-    "import/no-namespace": "error",
+    // "import/no-namespace": "error",
     "import/no-self-import": "error",
     "import/no-unassigned-import": [
       "error",
@@ -241,7 +241,7 @@ module.exports = {
         ],
       },
     ],
-    "import/no-unresolved": ["error", { commonjs: true }],
+    // "import/no-unresolved": ["error", { commonjs: true }],
     "import/no-unused-modules": "error",
     "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
     "import/no-webpack-loader-syntax": "warn",

@@ -75,18 +75,22 @@ module.exports = {
         overrides: { parameterProperties: "explicit" },
       },
     ],
-    // Maybe this one???
-    // "@typescript-eslint/explicit-module-boundary-types": """
-
-    "@typescript-eslint/naming-convention": [
-      "error",
-      {
-        selector: "default",
-        format: ["camelCase", "PascalCase", "UPPER_CASE"],
-        leadingUnderscore: "allow",
-        trailingUnderscore: "allow",
-      },
-    ],
+    // "@typescript-eslint/naming-convention": [
+    //   "error",
+    //   {
+    //     selector: "default",
+    //     format: ["camelCase", "PascalCase", "UPPER_CASE"],
+    //     leadingUnderscore: "allow",
+    //     trailingUnderscore: "allow",
+    //   },
+    //   {
+    //     selector: ["variable", "parameter"],
+    //     modifiers: ["destructured"],
+    //     format: ["camelCase", "PascalCase", "UPPER_CASE", "snake_case"],
+    //     leadingUnderscore: "allow",
+    //     trailingUnderscore: "allow",
+    //   },
+    // ],
     "@typescript-eslint/no-array-constructor": "error",
     "@typescript-eslint/no-dupe-class-members": "error",
     "@typescript-eslint/no-dynamic-delete": "warn",
@@ -122,12 +126,12 @@ module.exports = {
     ],
     "@typescript-eslint/no-useless-constructor": "error",
     "@typescript-eslint/no-var-requires": "warn",
+    "@typescript-eslint/non-nullable-type-assertion-style": "error",
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-for-of": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-includes": "error",
     "@typescript-eslint/prefer-literal-enum-member": "warn",
-    "@typescript-eslint/prefer-nullish-coalescing": "error",
     "@typescript-eslint/prefer-optional-chain": "error",
     // '@typescript-eslint/prefer-regexp-exec': ''
     "@typescript-eslint/prefer-string-starts-ends-with": "error",
@@ -138,6 +142,7 @@ module.exports = {
       { allowNumber: true, allowBoolean: true, allowNullish: true },
     ],
     "@typescript-eslint/return-await": ["error", "in-try-catch"],
+    "@typescript-eslint/sort-type-union-intersection-members": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/triple-slash-reference": [
       "error",
