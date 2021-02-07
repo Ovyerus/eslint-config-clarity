@@ -2,10 +2,10 @@
   "name": "eslint-config-clarity",
   "version": "0.6.0",
   "author": "Ovyerus <iamovyerus@gmail.com>",
-  "description": "ESLint configs for ClarityMoe",
+  "description": "Collection of ESLint configs to ensure code consistency and clarity!",
   "main": "index.js",
   "license": "MIT",
-  "repository": "https://github.com/ClarityCafe/eslint-config-clarity",
+  "repository": "https://github.com/Ovyerus/eslint-config-clarity",
   "scripts": {
     "lint": "eslint ."
   },
@@ -13,9 +13,12 @@
     "eslint",
     "eslintconfig",
     "eslint-config",
-    "clarity-moe",
+    "clear",
+    "clarity",
+    "readable",
     "typescript",
-    "react"
+    "react",
+    "vue"
   ],
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.1.0",
