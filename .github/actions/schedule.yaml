@@ -1,0 +1,24 @@
+name: Maintenance
+on:
+  schedule:
+    # Run first of every month
+    cron: "0 0 1 * *"
+
+jobs:
+  maintenance:
+    name: Maintenance
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: issue-bot
+        uses: imjohnbo/issue-bot@v2
+        with:
+          assignees: ovyerus
+          labels: maintenance
+          pinned: false
+          close-previous: true
+          template: ".github/maintenance.md"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
