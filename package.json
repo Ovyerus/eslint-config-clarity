@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-clarity",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "author": "Ovyerus <iamovyerus@gmail.com>",
   "description": "Collection of ESLint configs to ensure code consistency and clarity!",
   "main": "index.js",
