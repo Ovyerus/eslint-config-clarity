@@ -1,19 +1,21 @@
-const allExtensions = [".ts", ".tsx", ".d.ts", ".js", ".jsx"];
+const allExtensions = [".ts", ".tsx", ".js", ".jsx"];
 
 module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
-  parserOptions: { sourceType: "module" },
+  parserOptions: { sourceType: "module", ecmaVersion: "latest" },
 
   settings: {
     "import/extensions": allExtensions,
-    "import/external-module-folders": ["node_modules", "node_modules/@types"],
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx", ".d.ts"],
+      "@typescript-eslint/parser": [".ts", ".tsx"],
     },
     "import/resolver": {
       node: {
         extensions: allExtensions,
+      },
+      typescript: {
+        alwaysTryTypes: true,
       },
     },
   },
@@ -23,33 +25,37 @@ module.exports = {
       files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
       rules: {
         // Disable ESLint rules that are covered by TypeScript.
+        camelcase: "off",
+        "dot-notation": "off",
         "getter-return": "off",
-        "no-dupe-args": "off",
-        "no-dupe-keys": "off",
-        "no-unreachable": "off",
-        "valid-typeof": "off",
         "no-const-assign": "off",
+        "no-dupe-args": "off",
+        "no-dupe-class-members": "off",
+        "no-dupe-keys": "off",
         "no-implied-eval": "off",
+        "no-invalid-this": "off",
+        "no-loop-func": "off",
+        "no-loss-of-precision": "off",
         "no-new-symbol": "off",
+        "no-redeclare": "off",
+        "no-return-await": "off",
         "no-this-before-super": "off",
         "no-throw-literal": "off",
         "no-undef": "off",
-        "no-dupe-class-members": "off",
-        "no-redeclare": "off",
-        camelcase: "off",
+        "no-unreachable": "off",
         "no-unused-vars": "off",
         "no-use-before-define": "off",
-        "dot-notation": "off",
-        "no-return-await": "off",
-        "no-invalid-this": "off",
-        "no-loss-of-precision": "off",
-        "no-loop-func": "off",
+        "no-useless-constructor": "off",
+        "valid-typeof": "off",
 
         // Enable some preferences
         "no-var": "error",
         "prefer-const": "error",
         "prefer-rest-params": "error",
         "prefer-spread": "error",
+
+        // Covered by TS
+        "import/named": "off",
       },
     },
     {
@@ -75,22 +81,6 @@ module.exports = {
         overrides: { parameterProperties: "explicit" },
       },
     ],
-    // "@typescript-eslint/naming-convention": [
-    //   "error",
-    //   {
-    //     selector: "default",
-    //     format: ["camelCase", "PascalCase", "UPPER_CASE"],
-    //     leadingUnderscore: "allow",
-    //     trailingUnderscore: "allow",
-    //   },
-    //   {
-    //     selector: ["variable", "parameter"],
-    //     modifiers: ["destructured"],
-    //     format: ["camelCase", "PascalCase", "UPPER_CASE", "snake_case"],
-    //     leadingUnderscore: "allow",
-    //     trailingUnderscore: "allow",
-    //   },
-    // ],
     "@typescript-eslint/no-array-constructor": "error",
     "@typescript-eslint/no-dupe-class-members": "error",
     "@typescript-eslint/no-dynamic-delete": "warn",
@@ -102,8 +92,8 @@ module.exports = {
     "@typescript-eslint/no-inferrable-types": "error",
     "@typescript-eslint/no-invalid-this": "error",
     "@typescript-eslint/no-invalid-void-type": "error",
-    "@typescript-eslint/no-loss-of-precision": "error",
     "@typescript-eslint/no-loop-func": "error",
+    "@typescript-eslint/no-loss-of-precision": "error",
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-namespace": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
@@ -113,16 +103,18 @@ module.exports = {
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unnecessary-condition": [
       "error",
-      {
-        allowConstantLoopConditions: true,
-      },
+      { allowConstantLoopConditions: true },
     ],
     "@typescript-eslint/no-unnecessary-qualifier": "error",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-use-before-define": [
       "error",
-      { functions: false, classes: false, variables: false },
+      {
+        classes: false,
+        functions: false,
+        variables: false,
+      },
     ],
     "@typescript-eslint/no-useless-constructor": "error",
     "@typescript-eslint/no-var-requires": "warn",
@@ -133,20 +125,27 @@ module.exports = {
     "@typescript-eslint/prefer-includes": "error",
     "@typescript-eslint/prefer-literal-enum-member": "warn",
     "@typescript-eslint/prefer-optional-chain": "error",
-    // '@typescript-eslint/prefer-regexp-exec': ''
     "@typescript-eslint/prefer-string-starts-ends-with": "error",
     "@typescript-eslint/require-array-sort-compare": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/restrict-template-expressions": [
       "error",
-      { allowNumber: true, allowBoolean: true, allowNullish: true },
+      {
+        allowBoolean: true,
+        allowNullish: true,
+        allowNumber: true,
+      },
     ],
     "@typescript-eslint/return-await": ["error", "in-try-catch"],
     "@typescript-eslint/sort-type-union-intersection-members": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/triple-slash-reference": [
       "error",
-      { types: "prefer-import", path: "never", lib: "never" },
+      {
+        lib: "never",
+        path: "never",
+        types: "prefer-import",
+      },
     ],
     "@typescript-eslint/unbound-method": "error",
     "@typescript-eslint/unified-signatures": "error",

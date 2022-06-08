@@ -137,7 +137,6 @@ module.exports = {
       { avoidExplicitReturnArrows: true, avoidQuotes: true },
     ],
     "operator-assignment": "error",
-    // TODO: padding-line-between-statements
     "prefer-const": "error",
     "prefer-destructuring": "error",
     "prefer-exponentiation-operator": "error",
