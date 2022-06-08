@@ -12,6 +12,13 @@ module.exports = {
     node: true,
   },
   plugins: ["import", "prettier"],
+  settings: {
+    "import/external-module-folders": [
+      "node_modules",
+      "node_modules/@types",
+      ".yarn",
+    ],
+  },
   rules: {
     // Syntax
     "for-direction": "error",
