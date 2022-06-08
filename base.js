@@ -1,11 +1,3 @@
-const fromEntries =
-  Object.fromEntries ||
-  ((entries) =>
-    entries.reduce(
-      (all, [key, value]) => Object.assign(all, { [key]: value }),
-      {}
-    ));
-
 module.exports = {
   env: {
     es6: true,
@@ -131,11 +123,6 @@ module.exports = {
     "no-use-before-define": ["error", { variables: false, functions: false }],
 
     // Node
-    // "global-require": "warn",
-    // "handle-callback-err": "error",
-    // "no-buffer-constructor": "error",
-    // "no-mixed-requires": "error",
-    // "no-path-concat": "error",
     "no-sync": "warn",
 
     // Style
@@ -161,12 +148,10 @@ module.exports = {
     "spaced-comment": "error",
 
     // ES6
-    "arrow-body-style": "error",
     "constructor-super": "error",
     "no-class-assign": "error",
     "no-const-assign": "error",
     "no-dupe-class-members": "error",
-    // "no-duplicate-imports": "error",
     "no-new-symbol": "error",
     "no-this-before-super": "error",
     "no-useless-computed-key": "error",
@@ -181,7 +166,6 @@ module.exports = {
         avoidExplicitReturnArrows: true,
       },
     ],
-    "prefer-arrow-callback": "error",
     "prefer-const": "error",
     "prefer-destructuring": "error",
     "prefer-numeric-literals": "error",
@@ -194,15 +178,14 @@ module.exports = {
     // Plugins
     "prettier/prettier": "error",
 
-    "import/first": "error",
     "import/default": "error",
+    "import/first": "error",
     "import/export": "error",
-    "import/exports-last": "error",
-    // bruh
+    "import/exports-last": "warn",
     "import/extensions": [
       "error",
       "never",
-      fromEntries(
+      Object.fromEntries(
         [
           "json",
           "yaml",
@@ -223,16 +206,17 @@ module.exports = {
       ),
     ],
     "import/named": "error",
+    "import/namespace": "error",
     "import/newline-after-import": "error",
+    "import/no-absolute-path": "error",
     "import/no-amd": "error",
     "import/no-deprecated": "error",
     "import/no-duplicates": "error",
     "import/no-dynamic-require": "warn",
     "import/no-extraneous-dependencies": "error",
-    "import/no-mutable-exports": "error",
-    // "import/no-named-as-default": "error",
+    "import/no-mutable-exports": "warn",
+    "import/no-named-default": "error",
     "import/no-named-as-default-member": "error",
-    // "import/no-namespace": "error",
     "import/no-self-import": "error",
     "import/no-unassigned-import": [
       "error",
@@ -248,8 +232,7 @@ module.exports = {
         ],
       },
     ],
-    // "import/no-unresolved": ["error", { commonjs: true }],
-    "import/no-unused-modules": "error",
+    "import/no-unused-modules": ["error", { unusedExports: true }],
     "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
     "import/no-webpack-loader-syntax": "warn",
     // TODO: when possible, try putting scoped packages at the top.
@@ -264,15 +247,16 @@ module.exports = {
           "parent",
           ["sibling", "index"],
           "internal",
+          "type",
+          "unknown",
         ],
         pathGroups: [
+          { pattern: "#/**", group: "internal" },
           { pattern: "~/**", group: "internal" },
-          { pattern: "@/**", group: "internal" },
         ],
         "newlines-between": "always",
         alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],
-    // "import/prefer-default-export": "warn",
   },
 };
