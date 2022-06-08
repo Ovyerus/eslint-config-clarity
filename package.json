@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-clarity",
-  "version": "0.6.1",
+  "version": "1.0.0-rc.0",
   "author": "Ovyerus <iamovyerus@gmail.com>",
   "description": "Collection of ESLint configs to ensure code consistency and clarity!",
   "main": "index.js",
@@ -19,6 +19,18 @@
     "typescript",
     "react",
     "vue"
+  ],
+  "files": [
+    "base.js",
+    "index.js",
+    "react-base.js",
+    "react-typescript.js",
+    "react.js",
+    "typescript-base.js",
+    "typescript.js",
+    "vue-base.js",
+    "vue-typescript.js",
+    "vue.js"
   ],
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.1.0",
