@@ -216,7 +216,6 @@ module.exports = {
         ],
       },
     ],
-    "import/no-unused-modules": ["error", { unusedExports: true }],
     "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
     "import/no-webpack-loader-syntax": "warn",
     // TODO: when possible, try putting scoped packages at the top.
