@@ -2,9 +2,7 @@
 
 > Collection of ESLint configs to ensure code consistency and clarity!
 
-<!-- This repository contains various opinionated ESLint configs that are used to enforce consistent coding standards
-across all of ClarityMoe's JavaScript and TypeScript projects, although it may expand to include configurations for
-other languages in the future. -->
+<!-- TODO: mention the patch -->
 
 ## Installation
 
