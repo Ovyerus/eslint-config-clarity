@@ -15,7 +15,8 @@ $ npm i --save-dev eslint-config-clarity eslint prettier
 ```
 
 If you have a TypeScript project and plan on using a TypeScript config, make
-sure that's insatlled as well.
+sure that's installed. You will also need to install
+`eslint-import-resolver-typescript` yourself, for path resolution to work.
 
 After installing the config and required packages, simply add
 `"extends": "clarity"` to your .eslintrc, or specify the name of one of the
