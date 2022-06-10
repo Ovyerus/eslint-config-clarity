@@ -2,26 +2,24 @@
 
 > Collection of ESLint configs to ensure code consistency and clarity!
 
-<!-- TODO: mention the patch -->
-
 ## Installation
 
-To install this into your project, you'll need to install the main package,
-along with all of its peer dependencies.
+Simply install the `eslint-config-clarity` package through your package manager,
+alongside ESLint and Prettier. No need to mess around with peer dependencies or
+anything.
 
-As of `npm@7`, you can simply run `npm i --save-dev eslint-config-clarity` and
-it will install the package as well as its peer dependencies for you.
-
-Else if you have **npm** version 5 or above, you can simply run the following
-command, for either npm or yarn:
-
+```sh
+$ yarn add -D eslint-config-clarity eslint prettier
+# or
+$ npm i --save-dev eslint-config-clarity eslint prettier
 ```
-npx install-peerdeps --dev eslint-config-clarity
-```
+
+If you have a TypeScript project and plan on using a TypeScript config, make
+sure that's insatlled as well.
 
 After installing the config and required packages, simply add
 `"extends": "clarity"` to your .eslintrc, or specify the name of one of the
-presets depending on the project.
+[presets](#presets) depending on the project.
 
 ## Integrations
 
@@ -48,14 +46,18 @@ to provide reasonable defaults.
   use with any regular JavaScript project.
 - [clarity/react](./react.js) Configuration for use with any JavaScript + React
   project.
-- [clarity/vue](./vue.js) Configuration for use with any JavaScript + Vue
+- [clarity/vue](./vue.js) Configuration for use with any JavaScript + Vue 3
+  project.
+- [clarity/vue-2](./vue-2.js) Configuration for use with any JavaScript + Vue 2
   project.
 - [clarity/typescript](./typescript.js) Configuration for use with any regular
   TypeScript project.
 - [clarity/react-typescript](./react-typescript.js) Configuration for use with
   any TypeScript + React project.
 - [clarity/vue-typescript](./vue-typescript.js) Configuration for use with any
-  TypeScript + Vue project.
+  TypeScript + Vue 3 project.
+- [clarity/vue-2-typescript](./vue-2-typescript.js) Configuration for use with
+  any TypeScript + Vue 2 project.
 
 ## Base Presets
 
@@ -70,10 +72,22 @@ special functionality for the rules, in which case you'd use these.
 - [clarity/react-base](./react-base.js) Base configuration that provides rules
   for React and React Hooks.
 - [clarity/vue-base](./vue-base.js) Base configuration that provides rules for
-  Vue files & components.
+  Vue 3 files & components.
 - [clarity/typescript-base](./typescript-base.js) Base configuration that
   provides rules for TypeScript files. Intended to also be used in conjunction
   with the default base configuration.
+
+If using the base presets directly, you will also need to add our patch to your
+config so ESLint can properly resolve the dependencies needed (this is added by
+default when using the normal presets).
+
+```js
+require("eslint-config-clarity/patch");
+
+module.exports = {
+  // Your config here
+};
+```
 
 ## License
 
