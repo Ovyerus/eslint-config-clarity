@@ -24,7 +24,8 @@
     "vue"
   ],
   "files": [
-    "patch/index.js",
+    "patch/",
+    "util/",
     "base.js",
     "index.js",
     "react-base.js",

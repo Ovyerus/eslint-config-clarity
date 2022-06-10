@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 require("./patch");
-const { __vue3Rules: vue3Rules } = require("./vue-base");
+const { vue3Rules } = require("./util/vue");
 
 module.exports = {
   extends: ["clarity/base", "clarity/vue-base"],
