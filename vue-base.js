@@ -65,7 +65,7 @@ module.exports = {
     "vue/valid-v-text": "error",
 
     // Strongly Recommended
-    "vue/attribute-hypenation": "error",
+    "vue/attribute-hyphenation": "error",
     "vue/component-definition-name-casing": "error",
     "vue/no-template-shadow": "warn",
     "vue/one-component-per-file": "error",

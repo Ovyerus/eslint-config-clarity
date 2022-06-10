@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-clarity",
-  "version": "1.0.0-rc.4",
+  "version": "1.0.0-rc.4.2",
   "author": "Ovyerus <michael@ovyerus.com>",
   "description": "Collection of ESLint configs to ensure code consistency and clarity!",
   "main": "index.js",
@@ -35,7 +35,9 @@
     "typescript.js",
     "vue-base.js",
     "vue-typescript.js",
-    "vue.js"
+    "vue.js",
+    "vue-2.js",
+    "vue-2-typescript.js"
   ],
   "dependencies": {
     "@rushstack/eslint-patch": "^1.1.3",
