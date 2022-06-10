@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-require("@rushstack/eslint-patch/modern-module-resolution");
+require("./patch");
 
 module.exports = {
   extends: ["clarity/base", "clarity/react-base"],

@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-require("@rushstack/eslint-patch/modern-module-resolution");
+require("./patch");
 const { __vue3Rules: vue3Rules } = require("./vue-base");
 
 module.exports = {
