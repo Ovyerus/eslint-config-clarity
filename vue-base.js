@@ -4,7 +4,6 @@ module.exports = {
   extends: "plugin:vue/base",
   rules: {
     // Essential
-    "vue/multi-word-component-names": "warn",
     "vue/no-arrow-functions-in-watch": "error",
     "vue/no-async-in-computed-properties": "error",
     "vue/no-child-content": "error",
