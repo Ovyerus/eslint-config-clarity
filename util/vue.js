@@ -1,3 +1,4 @@
+/** List of rules to only enable for Vue 3 */
 exports.vue3Rules = {
   // Essential
   "vue/no-deprecated-data-object-declaration": "error",

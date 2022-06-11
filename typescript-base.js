@@ -22,7 +22,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      files: ["*.ts", "*.tsx", "*.js", "*.jsx", ".vue"],
       rules: {
         // Disable ESLint rules that are covered by TypeScript.
         camelcase: "off",
