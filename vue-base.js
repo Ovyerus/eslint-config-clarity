@@ -94,7 +94,7 @@ module.exports = {
     "vue/component-name-in-template-casing": [
       "error",
       "PascalCase",
-      { registeredComponentsOnly: false, ignore: builtinComponents },
+      { registeredComponentsOnly: false, ignores: builtinComponents },
     ],
     "vue/component-options-name-casing": "error",
     "vue/custom-event-name-casing": "error",
