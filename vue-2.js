@@ -17,6 +17,7 @@ module.exports = {
     "vue/no-v-model-argument": "error",
     "vue/valid-model-definition": "error",
     "vue/valid-v-bind-sync": "error",
+    "vue/custom-event-name-casing": "off",
 
     // Force turn off Vue 3 rules
     ...Object.fromEntries(

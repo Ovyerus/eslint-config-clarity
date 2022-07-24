@@ -31,7 +31,6 @@ module.exports = {
       "always",
       { exceptAfterSingleLine: true },
     ],
-    "new-cap": "error",
     "no-array-constructor": "error",
     "no-async-promise-executor": "error",
     "no-await-in-loop": "warn",

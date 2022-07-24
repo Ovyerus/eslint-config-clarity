@@ -1,3 +1,5 @@
+const builtinComponents = require("eslint-plugin-vue/lib/utils/vue3-builtin-components");
+
 const { vue3Rules } = require("./util/vue");
 
 module.exports = {
@@ -79,15 +81,7 @@ module.exports = {
     "vue/attributes-order": "error",
     "vue/component-tags-order": [
       "error",
-      {
-        order: [
-          "template",
-          "script:not([setup])",
-          "script[setup]",
-          "style:not([scoped])",
-          "style[scoped]",
-        ],
-      },
+      { order: ["template", "script", "style:not([scoped])", "style[scoped]"] },
     ],
     "vue/no-lone-template": "error",
     "vue/no-multiple-slot-args": "error",
@@ -100,7 +94,7 @@ module.exports = {
     "vue/component-name-in-template-casing": [
       "error",
       "PascalCase",
-      { registeredComponentsOnly: false },
+      { registeredComponentsOnly: false, ignore: builtinComponents },
     ],
     "vue/component-options-name-casing": "error",
     "vue/custom-event-name-casing": "error",
@@ -123,7 +117,6 @@ module.exports = {
     "vue/no-template-target-blank": "error",
     "vue/no-this-in-before-route-enter": "error",
     "vue/no-undef-properties": "error",
-    "vue/no-unused-properties": "error",
     "vue/no-unused-refs": "error",
     "vue/no-useless-mustaches": "error",
     "vue/no-useless-v-bind": "error",
