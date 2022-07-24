@@ -39,10 +39,6 @@ equivalent plugins and settings for your editor of choice.
 
 ## Presets
 
-These are the recommended configurations to use as they combine the
-[base presets](#base-presets) together with themselves and other ESLint settings
-to provide reasonable defaults.
-
 - [clarity](./index.js) The default configuration provided by this package, for
   use with any regular JavaScript project.
 - [clarity/react](./react.js) Configuration for use with any JavaScript + React
@@ -62,33 +58,10 @@ to provide reasonable defaults.
 
 ## Base Presets
 
-These are ESLint configurations which contain only the rules intended for that
-particular use case, plus any bare needs for it to function on its own (for
-example, a parser neded for it to work). It is recommended to use the regular
-[presets](#presets), however there may be cases in which you need to customise
-special functionality for the rules, in which case you'd use these.
-
-- [clarity/base](./base.js) The default base configuration. Provides rules for
-  general JavaScript projects.
-- [clarity/react-base](./react-base.js) Base configuration that provides rules
-  for React and React Hooks.
-- [clarity/vue-base](./vue-base.js) Base configuration that provides rules for
-  Vue 3 files & components.
-- [clarity/typescript-base](./typescript-base.js) Base configuration that
-  provides rules for TypeScript files. Intended to also be used in conjunction
-  with the default base configuration.
-
-If using the base presets directly, you will also need to add our patch to your
-config so ESLint can properly resolve the dependencies needed (this is added by
-default when using the normal presets).
-
-```js
-require("eslint-config-clarity/patch");
-
-module.exports = {
-  // Your config here
-};
-```
+Presets ending with `-base` are used to reduce duplication, and contain just the
+rules that strictly pertain to their name (e.g. TypeScript rules in
+`typescript-base`, Vue rules in `vue-base`) which then get extended in the full
+configs in various combinations depending on what's needed.
 
 ## License
 
