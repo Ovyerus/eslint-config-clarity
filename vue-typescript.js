@@ -3,9 +3,10 @@ require("./patch");
 
 module.exports = {
   extends: ["clarity/base", "clarity/typescript-base", "clarity/vue-base"],
+  parser: "vue-eslint-parser",
   parserOptions: {
-    parser: "@typescript-eslint/parser",
     extraFileExtensions: [".vue"],
+    parser: "@typescript-eslint/parser",
   },
   rules: {
     // This gets caught by Typescript

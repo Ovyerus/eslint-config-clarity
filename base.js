@@ -149,7 +149,6 @@ module.exports = {
     "prefer-template": "error",
     quotes: ["error", "double", { avoidEscape: true }],
     radix: ["error", "as-needed"],
-    "require-atomic-updates": "error",
     "require-await": "warn",
     "require-yield": "error",
     "spaced-comment": "error",
