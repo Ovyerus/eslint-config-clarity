@@ -147,7 +147,6 @@ module.exports = {
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
-    quotes: ["error", "double", { avoidEscape: true }],
     radix: ["error", "as-needed"],
     "require-await": "warn",
     "require-yield": "error",
