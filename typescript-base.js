@@ -80,7 +80,6 @@ module.exports = {
       "error",
       {
         accessibility: "no-public",
-        overrides: { parameterProperties: "explicit" },
       },
     ],
     "@typescript-eslint/no-array-constructor": "error",

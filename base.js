@@ -162,7 +162,6 @@ module.exports = {
     "import/default": "error",
     "import/first": "error",
     "import/export": "error",
-    "import/exports-last": "warn",
     "import/extensions": [
       "error",
       "never",
@@ -213,7 +212,7 @@ module.exports = {
         ],
       },
     ],
-    "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
+    "import/no-useless-path-segments": ["error", { noUselessIndex: false }],
     "import/no-webpack-loader-syntax": "warn",
     // TODO: when possible, try putting scoped packages at the top.
     // Not current possible as this rule isn't the same as tslint's `ordered-imports`.
