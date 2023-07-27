@@ -156,7 +156,7 @@ module.exports = {
       },
     ],
     "@typescript-eslint/return-await": ["error", "in-try-catch"],
-    "@typescript-eslint/sort-type-union-intersection-members": "error",
+    "@typescript-eslint/sort-type-constituents": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/triple-slash-reference": [
       "error",
